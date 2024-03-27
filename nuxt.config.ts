@@ -29,6 +29,17 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: '',
   },
+  app: {
+    head: {
+      titleTemplate: '%s - Template',
+      htmlAttrs: {
+        lang: 'en-US',
+      },
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      ],
+    },
+  },
   content: {
     documentDriven: true,
     highlight: {
