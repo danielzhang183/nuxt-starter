@@ -4,8 +4,13 @@ export default defineNuxtConfig({
   modules: [
     '@vueuse/nuxt',
     '@unocss/nuxt',
+    '@nuxtjs/color-mode',
   ],
   css: [
     '@unocss/reset/tailwind.css',
+    '~/styles/global.css',
   ],
+  colorMode: {
+    classSuffix: '',
+  },
 })

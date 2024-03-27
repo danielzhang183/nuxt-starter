@@ -1,0 +1,41 @@
+html {
+  font-size: var(--font-size, 15px);
+  width: 100%;
+  width: 100vw;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+html,
+body,
+#__nuxt {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+html {
+  --at-apply: bg-base text-base;
+}
+
+html:not(.enable-pinch-to-zoom) body {
+  /* Prevent arbitrary zooming on mobile devices */
+  touch-action: pan-x pan-y;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Homemade Apple';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/homemade-apple-v18.ttf) format('truetype');
+}
+
+/* Force vertical scrollbar to be always visible to avoid layout shift while loading the content */
+body {
+  overflow-y: scroll;
+  -webkit-tap-highlight-color: transparent;
+}
