@@ -8,7 +8,9 @@ export default defineNuxtConfig({
   ],
   css: [
     '@unocss/reset/tailwind.css',
+    '~/styles/default-theme.css',
     '~/styles/global.css',
+    '~/styles/vars.css',
   ],
   colorMode: {
     classSuffix: '',

@@ -15,6 +15,7 @@
   "dependencies": {
     "-": "^0.0.1",
     "@nuxtjs/color-mode": "^3.3.3",
+    "@pinia/nuxt": "^0.5.1",
     "@unocss/nuxt": "^0.58.7",
     "@vueuse/nuxt": "^10.9.0",
     "D": "^1.0.0",
