@@ -10,6 +10,7 @@
 
     <div flex-auto />
 
+    <SettingsScreenFull />
     <SettingsColorMode />
 
     <NuxtLink
