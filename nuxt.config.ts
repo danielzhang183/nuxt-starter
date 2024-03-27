@@ -1,3 +1,5 @@
+import { execaSync } from 'execa'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -6,12 +8,21 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@nuxtjs/color-mode',
     '@pinia/nuxt',
+    'floating-vue/nuxt',
   ],
+  runtimeConfig: {
+    public: {
+      buildTime: Date.now(),
+      gitSha: execaSync('git', ['rev-parse', 'HEAD']).stdout.trim(),
+    },
+  },
   css: [
     '@unocss/reset/tailwind.css',
+    'floating-vue/dist/style.css',
     '~/styles/default-theme.css',
     '~/styles/global.css',
     '~/styles/vars.css',
+    '~/styles/dropdown.css',
   ],
   colorMode: {
     classSuffix: '',

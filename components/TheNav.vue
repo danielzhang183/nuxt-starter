@@ -12,6 +12,7 @@
 
     <SettingsScreenFull />
     <SettingsColorMode />
+    <SettingsBuiltInfo />
 
     <NuxtLink
       btn-icon
