@@ -11,5 +11,15 @@
     <div flex-auto />
 
     <SettingsColorMode />
+
+    <NuxtLink
+      btn-icon
+      rel="noreferrer"
+      href="https://github.com/danielzhang183/vite-starter"
+      target="_blank"
+      title="GitHub"
+    >
+      <div i-carbon-logo-github />
+    </NuxtLink>
   </div>
 </template>
