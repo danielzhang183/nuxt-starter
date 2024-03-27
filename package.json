@@ -13,6 +13,9 @@
     "format": "eslint . --fix"
   },
   "dependencies": {
+    "-": "^0.0.1",
+    "@unocss/nuxt": "^0.58.7",
+    "D": "^1.0.0",
     "nuxt": "^3.11.1",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
