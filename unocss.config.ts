@@ -64,6 +64,18 @@ export default defineConfig({
       'bg-hover-overflow': 'relative z-0 transition-colors duration-250 after-content-empty after:(absolute inset--4px bg-transparent rounded-full z--1 transition-colors duration-250) hover:after:(bg-active)',
     },
   ],
+  theme: {
+    colors: {
+      primary: {
+        DEFAULT: 'var(--c-primary)',
+        active: 'var(--c-primary-active)',
+      },
+      danger: {
+        DEFAULT: 'var(--c-danger)',
+        active: 'var(--c-danger-active)',
+      },
+    },
+  },
   presets: [
     presetUno(),
     presetIcons(),

@@ -40,5 +40,11 @@
     "yaml",
     "toml",
     "astro"
+  ],
+  "cSpell.words": [
+    "execa",
+    "iconify",
+    "nuxi",
+    "nuxtjs"
   ]
 }
