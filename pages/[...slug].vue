@@ -14,11 +14,7 @@ function go() {
     <div text-4xl>
       <div i-carbon-campsite inline-block />
     </div>
-    <p>
-      <a rel="noreferrer" href="https://github.com/danielzhang183/vite-starter" target="_blank">
-        Nuxt Starter
-      </a>
-    </p>
+    <ContentDoc />
 
     <div py-4 />
 

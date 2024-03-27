@@ -8,6 +8,7 @@ import {
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
+import extractorMdc from '@unocss/extractor-mdc'
 
 export default defineConfig({
   shortcuts: [
@@ -75,6 +76,14 @@ export default defineConfig({
         active: 'var(--c-danger-active)',
       },
     },
+  },
+  extractors: [
+    extractorMdc(),
+  ],
+  content: {
+    filesystem: [
+      './content/**/*.md',
+    ],
   },
   presets: [
     presetUno(),

@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@pinia/nuxt',
     'floating-vue/nuxt',
+    '@nuxt/content',
   ],
   runtimeConfig: {
     public: {
@@ -23,8 +24,26 @@ export default defineNuxtConfig({
     '~/styles/global.css',
     '~/styles/vars.css',
     '~/styles/dropdown.css',
+    '~/styles/prose.css',
   ],
   colorMode: {
     classSuffix: '',
+  },
+  content: {
+    documentDriven: true,
+    highlight: {
+      theme: {
+        default: 'vitesse-light',
+        dark: 'vitesse-dark',
+      },
+    },
+    markdown: {
+      remarkPlugins: [
+        'remark-external-links',
+      ],
+    },
+    experimental: {
+      search: {},
+    },
   },
 })
