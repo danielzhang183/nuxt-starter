@@ -45,7 +45,7 @@ export default defineConfig({
       'btn-text': 'btn-base px-4 py-2 text-$c-primary hover:text-$c-primary-active',
       'btn-action-icon': 'btn-base hover:bg-active rounded-full h9 w9 flex items-center justify-center disabled:bg-transparent disabled:text-$c-text-secondary',
       'btn-danger': 'btn-base px-4 py-2 rounded text-white bg-$c-danger hover:bg-$c-danger-active',
-      'btn-icon': 'rounded p-2 hover:bg-active',
+      'btn-icon': 'rounded p-2 hover:bg-active text-2xl',
 
       // input
       'input-base-focus': 'focus:outline-none focus:border-$c-primary',

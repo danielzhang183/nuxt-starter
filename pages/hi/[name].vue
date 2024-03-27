@@ -1,4 +1,8 @@
-<script setup lang="ts" name="Hi">
+<script setup lang="ts">
+defineOptions({
+  name: 'Hi',
+})
+
 const props = defineProps<{ name: string }>()
 const router = useRouter()
 const user = useUserStore()

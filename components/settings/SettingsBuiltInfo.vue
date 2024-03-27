@@ -9,11 +9,10 @@ const timeAgo = useTimeAgo(buildTime)
 <template>
   <VDropdown :distance="6">
     <button
-      rounded p2
-      hover="bg-active"
-      title="Playground Information"
+      btn-icon
+      title="Built Information"
     >
-      <div i-ph-info-duotone text-2xl />
+      <div i-ph-info-duotone />
     </button>
     <template #popper>
       <div px5 py4 grid="~ gap-y-3 gap-x-2 cols-[max-content_1fr] items-center">

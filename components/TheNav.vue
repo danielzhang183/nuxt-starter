@@ -4,12 +4,13 @@
       <div i-carbon-campsite text-2xl />
       <div ml-1 text-xl>
         Nuxt
-        <sup class="text-primary text-xs italic opacity-75">Opinionated Template</sup>
+        <sup class="text-xs text-primary italic opacity-75">Opinionated Template</sup>
       </div>
     </div>
 
     <div flex-auto />
 
+    <SettingsCommandPanel />
     <SettingsScreenFull />
     <SettingsThemeColors />
     <SettingsColorMode />
