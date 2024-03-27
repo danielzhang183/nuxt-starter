@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Disallow authenticated pages
+
+# Disallow: /home
+
+# Wait 1 second between successive requests.
+Crawl-delay: 1
