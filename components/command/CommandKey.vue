@@ -15,7 +15,7 @@ const keys = computed(() => props.name.toLowerCase().split('+'))
         +
       </div>
       <div
-        class="p-1 grid place-items-center rounded-lg shadow-sm"
+        class="grid place-items-center rounded-lg p-1 shadow-sm"
         text="xs secondary"
         border="1 base"
       >

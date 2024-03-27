@@ -3,7 +3,6 @@ import type {
   CommandScope,
   QueryResult,
   QueryResultItem,
-  SearchResult as SearchResultType,
 } from '~/types'
 
 const emit = defineEmits<{
