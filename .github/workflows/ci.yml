@@ -37,4 +37,4 @@ jobs:
         run: pnpm lint
 
       - name: 💪 Type check
-        run: pnpm test:typecheck
+        run: pnpm typecheck

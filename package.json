@@ -11,6 +11,7 @@
     "preview": "nuxt preview",
     "lint": "eslint .",
     "format": "eslint . --fix",
+    "typecheck": "nuxt typecheck",
     "prepare": "ignore-dependency-scripts \"tsx scripts/prepare.ts\"",
     "postinstall": "ignore-dependency-scripts \"nuxi prepare && pnpm prepare\""
   },
