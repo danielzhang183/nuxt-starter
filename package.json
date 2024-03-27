@@ -4,6 +4,8 @@
   "version": "0.0.0",
   "private": true,
   "packageManager": "pnpm@8.15.5",
+  "license": "MIT",
+  "homepage": "https://github.com/danielzhang183/nuxt-starter",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev  --open",
@@ -11,17 +13,16 @@
     "preview": "nuxt preview",
     "lint": "eslint .",
     "format": "eslint . --fix",
-    "typecheck": "nuxt typecheck",
+    "typecheck": "stale-dep && nuxt typecheck",
     "prepare": "ignore-dependency-scripts \"tsx scripts/prepare.ts\"",
-    "postinstall": "ignore-dependency-scripts \"nuxi prepare && pnpm prepare\""
+    "postinstall": "ignore-dependency-scripts \"stale-dep -u && simple-git-hooks && nuxi prepare && pnpm prepare\"",
+    "release": "stale-dep && bumpp && tsx scripts/release"
   },
   "dependencies": {
-    "-": "^0.0.1",
     "@nuxtjs/color-mode": "^3.3.3",
     "@pinia/nuxt": "^0.5.1",
     "@unocss/nuxt": "^0.58.7",
     "@vueuse/nuxt": "^10.9.0",
-    "D": "^1.0.0",
     "floating-vue": "^5.2.2",
     "fuse.js": "^7.0.0",
     "nuxt": "^3.11.1",
@@ -39,12 +40,24 @@
     "@types/fs-extra": "^11.0.4",
     "@unocss/eslint-plugin": "^0.58.7",
     "@unocss/extractor-mdc": "^0.58.7",
+    "bumpp": "^9.4.0",
     "chroma-js": "^2.4.2",
     "eslint": "8.57.0",
     "execa": "^8.0.1",
     "fs-extra": "^11.2.0",
     "ignore-dependency-scripts": "^1.0.1",
+    "lint-staged": "^15.2.2",
     "remark-external-links": "^9.0.1",
-    "tsx": "^4.7.1"
+    "simple-git": "^3.23.0",
+    "simple-git-hooks": "^2.11.1",
+    "stale-dep": "^0.7.0",
+    "tsx": "^4.7.1",
+    "vue-tsc": "^2.0.7"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
   }
 }
