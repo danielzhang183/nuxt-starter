@@ -1,0 +1,12 @@
+services:
+  nst:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      # make sure this directory has the same ownership as the nst user from the Dockerfile
+      # otherwise nst will not be able to store configs for accounts
+      # e.q. mkdir ./nst-storage; sudo chown 911:911 ./nst-storage
+      - './nst-storage:/nst/data'
+    ports:
+      - 5314:5314
